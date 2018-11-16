@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CTPMFCTEST.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CTPMFCTEST.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CTPMFCTEST"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "CTPMFCTEST，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_CTPMFCTEST_DIALOG DIALOGEX 0, 0, 379, 374
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CTPMFCTEST"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MSG,25,67,207,199,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_HSCROLL
+    LTEXT           "消息提示：",IDC_STATIC,24,53,67,8
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,36,13,100,15
+    LTEXT           "IP",IDC_STATIC,25,16,8,8
+    LTEXT           "PORT",IDC_STATIC,140,16,19,8
+    EDITTEXT        IDC_EDIT_PORT,161,13,24,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BUTTON_LOGIN,315,16,47,39
+    LTEXT           "最新价",IDC_STATIC,253,120,22,8
+    LTEXT           "买价",IDC_STATIC,255,150,15,8
+    LTEXT           "卖价",IDC_STATIC,254,184,15,8
+    EDITTEXT        IDC_EDIT_NEWPRICE,242,134,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BUYPRICE,243,164,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SELLPRICE,243,198,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SECID,240,79,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "订阅行情",IDC_BUTTON_SUBSECID,307,79,50,14
+    PUSHBUTTON      "买入",IDC_BUTTON_BUYORDER,240,215,53,46
+    PUSHBUTTON      "买出",IDC_BUTTON_SELLORDER,306,215,53,46
+    LTEXT           "经纪公司代码",IDC_STATIC,223,14,42,8
+    LTEXT           "投资者代码",IDC_STATIC,230,28,35,8
+    LTEXT           "用户密码",IDC_STATIC,237,42,28,8
+    EDITTEXT        IDC_EDIT_BROKERID,268,12,43,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INVESTORID,268,26,43,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,268,41,43,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,36,31,100,15
+    LTEXT           "IP",IDC_STATIC,25,34,8,8
+    LTEXT           "PORT",IDC_STATIC,140,34,19,8
+    EDITTEXT        IDC_EDIT_PORT2,161,31,24,14,ES_AUTOHSCROLL
+    LTEXT           "成交数量",IDC_STATIC,314,119,28,8
+    EDITTEXT        IDC_EDIT_NEWVOLUMN,308,133,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "买1数量",IDC_STATIC,316,150,26,8
+    EDITTEXT        IDC_EDIT_BUYVOLUMN,309,164,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "卖1数量",IDC_STATIC,316,185,26,8
+    EDITTEXT        IDC_EDIT_SELLVOLUMN,309,199,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "行情更新时间：",IDC_STATIC,242,101,49,8
+    EDITTEXT        IDC_EDIT_LASTTIME,291,100,74,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "可用资金",IDC_STATIC,21,277,48,8
+    LTEXT           "客户动态权益",IDC_STATIC,105,277,48,8
+    LTEXT           "平仓盈亏",IDC_STATIC,199,277,36,8
+    LTEXT           "持仓盈亏",IDC_STATIC,275,277,48,8
+    EDITTEXT        IDC_EDIT4,51,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,150,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,229,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,305,275,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_HOLDORDER,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,302,329,50
+    LTEXT           "客户持仓信息",IDC_STATIC,22,290,42,8
+END
+
+IDD_DIALOG_ORDER DIALOGEX 0, 0, 211, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,38,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,116,156,50,14
+    LTEXT           "最新价",IDC_STATIC,16,43,37,8
+    LTEXT           "买一价",IDC_STATIC,16,61,37,8
+    LTEXT           "卖一价",IDC_STATIC,16,77,37,8
+    LTEXT           "买卖方向",IDC_STATIC,16,95,37,8
+    LTEXT           "开平方向",IDC_STATIC,16,111,37,8
+    LTEXT           "投保类型",IDC_STATIC,16,128,37,8
+    EDITTEXT        IDC_EDIT1,51,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,51,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,51,77,40,14,ES_AUTOHSCROLL
+    LTEXT           "总成交数量",IDC_STATIC,113,43,37,8
+    LTEXT           "买一数量",IDC_STATIC,113,61,37,8
+    LTEXT           "卖一数量",IDC_STATIC,113,77,37,8
+    LTEXT           "指定价",IDC_STATIC,113,95,37,8
+    LTEXT           "手数",IDC_STATIC,113,111,37,8
+    EDITTEXT        IDC_EDIT7,148,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,148,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,148,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,148,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,148,111,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_BUYORSELL,51,95,40,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OPENORCLOSE,51,111,40,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SATYPE,51,127,40,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "合约代码 ",IDC_STATIC,53,18,48,12
+    EDITTEXT        IDC_EDIT12,108,15,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CTPMFCTEST.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "CTPMFCTEST.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CTPMFCTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 367
+    END
+
+    IDD_DIALOG_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_ORDER DLGINIT
+BEGIN
+    IDC_COMBO_BUYORSELL, 0x403, 5, 0
+0xf2c2, 0xebc8, "\000" 
+    IDC_COMBO_BUYORSELL, 0x403, 5, 0
+0xf4c2, 0xf6b3, "\000" 
+    IDC_COMBO_OPENORCLOSE, 0x403, 5, 0
+0xaabf, 0xd6b2, "\000" 
+    IDC_COMBO_OPENORCLOSE, 0x403, 5, 0
+0xbdc6, 0xd6b2, "\000" 
+    IDC_COMBO_SATYPE, 0x403, 5, 0
+0xb6cd, 0xfabb, "\000" 
+    IDC_COMBO_SATYPE, 0x403, 5, 0
+0xd7cc, 0xa3b1, "\000" 
+    IDC_COMBO_SATYPE, 0x403, 5, 0
+0xd7cc, 0xfbc0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CTPMFCTEST(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CTPMFCTEST.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
